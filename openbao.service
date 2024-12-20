@@ -16,7 +16,7 @@ SecureBits=keep-caps
 AmbientCapabilities=CAP_IPC_LOCK
 CapabilityBoundingSet=CAP_SYSLOG CAP_IPC_LOCK
 NoNewPrivileges=yes
-ExecStart=/usr/bin/openbao server -config=/etc/openbao.d/openbao.hcl
+ExecStart=/usr/bin/bao server -config=/etc/openbao.d/openbao.hcl
 ExecReload=/bin/kill --signal HUP $MAINPID
 KillMode=process
 KillSignal=SIGINT
